@@ -16,12 +16,16 @@ let result = dbscan.fit();
 const dbscan = new DBSCAN(eps, min_point, distance, data);
 let result = dbscan.fit();
 
-// 3, distance default is "Euclidean"
+// 3, fit and pass data
+const dbscan = new DBSCAN(eps, min_point, distance);
+let result = dbscan.fit(data);
+
+// 4, distance default is "Euclidean"
 const dbscan = new DBSCAN(eps, min_point);
 dbscan.data({1:{x:1, y:2}, 2:{x:999, y:999}, 3:{x:1, y:2}});
 let result = dbscan.fit();
 
-// 4, use your distance function
+// 5, use your distance function
 const dbscan = new DBSCAN(eps, min_point);
 dbscan.set_distance_function((v1, v2) => {...})
 dbscan.data({1:{x:1, y:2}, 2:{x:999, y:999}, 3:{x:1, y:2}});
