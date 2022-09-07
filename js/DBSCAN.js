@@ -3,6 +3,7 @@
  * @params {double} eps
  * @params {int} min_point
  * @params {string} distance
+ * @params {array/object} data note: dim should be 2, example [[]] or {1:{}}
  */ 
 class DBSCAN{
     constructor(eps=undefined, min_point=undefined, distance="Euclidean", data=undefined){
