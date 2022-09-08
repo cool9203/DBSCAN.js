@@ -2,8 +2,22 @@
 use js implement DBSCAN algorithm with https://en.wikipedia.org/wiki/DBSCAN  
 
 # How to use  
-<script type="text/javascript" src="DBSCAN.js"></script>
 
+## 1. download this repo  
+```js
+<script type="text/javascript" src="DBSCAN.js"></script>
+```
+
+## 2. use jsdelivr
+```js
+// 1. use newest version
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cool9203/DBSCAN.js/js/DBSCAN.min.js"></script>
+
+// 2. use special version
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cool9203/DBSCAN.js@<version or commit number>/js/DBSCAN.min.js"></script>
+```
+
+## use in your code
 ```js
 // 1, use function to set params
 const dbscan = new DBSCAN().eps(10)
