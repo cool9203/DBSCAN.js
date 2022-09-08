@@ -5,7 +5,7 @@
  * @params {string} distance
  * @params {array/object} data note: dim should be 2, example [[]] or {1:{}}
  */ 
-class DBSCAN{
+export default class DBSCAN{
     constructor(eps=undefined, min_point=undefined, distance="Euclidean", data=undefined){
         this.allow_distance = ["Euclidean"];
         this.eps(eps);
